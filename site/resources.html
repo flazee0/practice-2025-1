@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы - Нейрофоторамки Texel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resources-hero {
+            height: 40vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/resources-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 60px;
+        }
+
+        .resources-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .resource-category {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .resource-category h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .resource-category h2 i {
+            color: var(--secondary-color);
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--light-bg);
+        }
+
+        .resource-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .resource-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .resource-item p {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .resource-link i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .resource-link:hover {
+            color: var(--primary-color);
+        }
+
+        .resource-link:hover i {
+            transform: translateX(5px);
+        }
+
+        .video-section {
+            margin-top: 4rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .video-item {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-item iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Texel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html" class="active">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="resources-hero">
+        <div class="hero-content">
+            <h1>Полезные ресурсы</h1>
+            <p>Материалы для изучения и развития проекта</p>
+        </div>
+    </section>
+
+    <main class="resources-content">
+        <div class="resources-grid">
+            <div class="resource-category">
+                <h2><i class="fas fa-building"></i> Наш партнер</h2>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h3>Texel - Официальный сайт</h3>
+                        <p>Официальный сайт компании-партнера с информацией о технологиях и продуктах.</p>
+                        <a href="https://texel.graphics/ru/" class="resource-link" target="_blank">
+                            Перейти на сайт <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resource-category">
+                <h2><i class="fas fa-book"></i>ИИ в мире дизайна и моды</h2>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h3>Искусственный интеллект в дизайне</h3>
+                        <p>Технологии искусственного интеллекта в работе модельера, дизайнера, конструктора.</p>
+                        <a href="https://inistek.ru/page/neyroset-dlia-dizaynera/" class="resource-link" target="_blank">
+                            Читать статью <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <h3>Как искусственный интеллект меняет модную индустрию</h3>
+                        <p>Статья о том, как искусственный интеллект уже используется в мире моды.</p>
+                        <a href="https://trends.rbc.ru/trends/industry/6720bb5d9a7947638317dce6" class="resource-link" target="_blank">
+                            Читать статью <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resource-category">
+                <h2><i class="fas fa-newspaper"></i>Использование ИИ</h2>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h3>Генерация ИИ изображений</h3>
+                        <p>Обзор достижений в области синтеза изображений с помощью ИИ</p>
+                        <a href="https://ieeexplore.ieee.org/document/9043519" class="resource-link" target="_blank">
+                            Открыть статью <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <h3>Использование генеративного ИИ</h3>
+                        <p>Руководству по использованию генеративного ИИ</p>
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4624621" class="resource-link" target="_blank">
+                            Открыть статью <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+</body>
+</html> 

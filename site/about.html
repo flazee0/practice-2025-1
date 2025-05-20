@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте - Нейрофоторамки Texel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/about-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 60px;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .about-section {
+            margin-bottom: 4rem;
+        }
+
+        .about-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .tech-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .spec-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .spec-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 4rem auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Texel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>О нашем проекте</h1>
+            <p>Инновации в мире умного подбора одежды</p>
+        </div>
+    </section>
+
+    <main class="about-content">
+        <section class="about-section">
+            <h2>Наша миссия</h2>
+            <p>Проект нейрофоторамок Texel представляет собой революционное решение в области умного подбора одежды. Мы стремимся создать продукт, который не просто сканирует тело пользователя, но и анализирует погодные условия, предпочтения и стиль, чтобы предложить идеальные варианты одежды для каждого дня.</p>
+            <p>В партнерстве с компанией Texel мы разрабатываем инновационную технологию, которая сочетает в себе 3D-сканирование, искусственный интеллект и анализ погодных данных для создания персонализированных рекомендаций по гардеробу.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Технология</h2>
+            <div class="tech-specs">
+                <div class="spec-card">
+                    <h3>3D-сканирование</h3>
+                    <p>Высокоточное сканирование тела пользователя для создания детальной цифровой модели, учитывающей все особенности фигуры.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Искусственный интеллект</h3>
+                    <p>Передовые алгоритмы машинного обучения анализируют предпочтения пользователя, погодные условия и актуальные тренды моды.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Умные рекомендации</h3>
+                    <p>Система предлагает оптимальные варианты одежды, учитывая погоду, повод и индивидуальный стиль пользователя.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Этапы разработки</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Исследование рынка</h3>
+                        <p>Анализ потребностей пользователей и существующих решений в области умного декора.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Разработка прототипа</h3>
+                        <p>Создание первого прототипа нейрофоторамки с базовым функционалом.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Тестирование</h3>
+                        <p>Проведение тестов с фокус-группами и сбор обратной связи.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Запуск продукта</h3>
+                        <p>Планируемый выход на рынок с полной версией продукта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+</body>
+</html> 

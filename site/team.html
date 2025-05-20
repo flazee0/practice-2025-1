@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники - Нейрофоторамки Texel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-hero {
+            height: 40vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/team-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 60px;
+        }
+
+        .team-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .member-info {
+            padding: 2rem;
+        }
+
+        .member-contribution {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--light-bg);
+        }
+
+        .member-contribution h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .member-contribution ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .member-contribution li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .member-contribution li::before {
+            content: '•';
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .member-header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: left;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .member-name-wrapper {
+            overflow: hidden;
+            padding-left: 10px;
+        }
+
+        .member-info h3 {
+            margin-top: 0;
+            padding-top: 5px;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .member-role {
+            margin-top: 5px;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Texel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html" class="active">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="team-hero">
+        <div class="hero-content">
+            <h1>Наша команда</h1>
+            <p>Участники проекта, создающие будущее умного декора</p>
+        </div>
+    </section>
+
+<main class="team-content">
+    <div class="team-grid">
+        <div class="team-member">
+            <div class="member-info">
+                <div class="member-header">
+                    <img src="images/member.jpg" alt="Самаркин Александр" class="member-icon">
+                    <div class="member-title">
+                        <h3>Самаркин Александр</h3>
+                        <p class="member-role">Руководитель проекта/аналитик</p>
+                    </div>
+                </div>
+                <div class="member-contribution">
+                    <h4>Вклад в проект:</h4>
+                    <ul>
+                        <li>Координация работы команды</li>
+                        <li>Разработка стратегии проекта</li>
+                        <li>Взаимодействие с партнерами</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/xayok7"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-info">
+                <div class="member-header">
+                    <img src="images/member.jpg" alt="Кулешов Дмитрий" class="member-icon">
+                    <div class="member-title">
+                        <h3>Кулешов Дмитрий</h3>
+                        <p class="member-role">Дизайнер/разработчик</p>
+                    </div>
+                </div>
+                <div class="member-contribution">
+                    <h4>Вклад в проект:</h4>
+                    <ul>    
+                        <li>Интеграция взаимодействия с метеостанциями/li>
+                        <li>Оптимизация алгоритмов</li>
+                        <li>Интеграция AI-моделей</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/flazee0"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+</body>
+</html> 

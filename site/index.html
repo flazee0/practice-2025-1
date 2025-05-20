@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейрофоторамки Texel - Умный декор будущего</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<style>
+    .timeline {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .timeline h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    
+    .timeline-items {
+        position: relative;
+        padding-left: 50px;
+    }
+    
+    .timeline-items:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: #ddd;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .timeline-date {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+    }
+    
+    .timeline-content {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 3px solid #2e8ac7;
+    }
+    
+    .timeline-content h3 {
+        margin-top: 0;
+        color: #222;
+    }
+    
+    .timeline-content p {
+        margin-bottom: 0;
+        color: #666;
+    }
+    
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #2e8ac7;
+        border: 3px solid white;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Texel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Нейрофоторамки Texel</h1>
+                <p>Инновационное решение для умного подбора одежды</p>
+                <a href="about.html" class="cta-button">Узнать больше</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Почему нейрофоторамки?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Искусственный интеллект</h3>
+                    <p>Умная система анализа предпочтений и погодных условий</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Подбор одежды</h3>
+                    <p>Точное сканирование тела для идеального подбора гардероба</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Учет погоды</h3>
+                    <p>Адаптация рекомендаций под текущие погодные условия</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="preview">
+            <h2>Как это работает</h2>
+            <div class="preview-content">
+                <div class="preview-text">
+                    <p>Нейрофоторамки Texel - это инновационное решение, которое сочетает в себе технологии 3D-сканирования и искусственный интеллект. Наша система создает точную цифровую модель тела пользователя, анализирует погодные условия и предлагает оптимальные варианты одежды, учитывая индивидуальные предпочтения и стиль.</p>
+                    <a href="about.html" class="learn-more">Подробнее о технологии</a>
+                </div>
+                <div class="preview-image">
+                    <img src="images/preview.jpg" alt="Нейрофоторамка в действии">
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <h2>Ключевые события</h2>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-date">12 февраля 2025</div>
+                    <div class="timeline-content">
+                        <h3>Знакомство с компанией-партнёром</h3>
+                        <p>Первая встреча с командой Texel и обсуждение перспектив сотрудничества</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">25 марта 2025</div>
+                    <div class="timeline-content">
+                        <h3>Посещение офиса в Технополисе</h3>
+                        <p>Знакомство с прототипом продукции и обсуждение технических деталей</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">15 апреля 2025</div>
+                    <div class="timeline-content">
+                        <h3>Интеграция технологий</h3>
+                        <p>Начало работы над объединением Virtual Try-On с погодными API</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+</body>
+</html> 

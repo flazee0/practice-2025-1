@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал - Нейрофоторамки Texel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .journal-hero {
+            height: 40vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/journal-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 60px;
+        }
+
+        .journal-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .journal-post {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .journal-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 2rem;
+        }
+
+        .post-date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-title {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .post-excerpt {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--primary-color);
+        }
+
+        .post-tags {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: var(--light-bg);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Texel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html" class="active">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="journal-hero">
+        <div class="hero-content">
+            <h1>Журнал проекта</h1>
+            <p>Последние новости и обновления</p>
+        </div>
+    </section>
+
+    <main class="journal-content">
+        <div class="journal-grid">
+            <article class="journal-post">
+                <div class="post-content">
+                    <div class="post-date">12 февраля 2025</div>
+                    <h2 class="post-title">Знакомство с компанией-партнёром</h2>
+                    <p class="post-excerpt">В рамках первого этапа проекта состоялась встреча с командой Texel, в ходе которой мы познакомились с инновационными технологиями компании. Особый интерес вызвала система виртуальной примерки одежды, которая использует нейросети для создания точной 3D-модели тела пользователя. В ходе встречи мы обсудили возможности интеграции этой технологии с системой анализа погодных условий для создания умного гардероба. Команда Texel продемонстрировала текущие возможности нейрофоторамок и поделилась планами по развитию продукта. Были намечены основные направления сотрудничества и определены ключевые точки взаимодействия между нашими командами.</p>
+                    <div class="post-tags">
+                        <span class="tag">Партнерство</span>
+                        <span class="tag">Встреча</span>
+                        <span class="tag">Технологии</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="journal-post">
+                <div class="post-content">
+                    <div class="post-date">25 марта 2025</div>
+                    <h2 class="post-title">Посещение офиса в Технополисе и знакомство с прототипом продукции</h2>
+                    <p class="post-excerpt">Наша команда посетила офис Texel в Технополисе Москва, где нам представили прототип нейрофоторамки в действии. Технология впечатлила своей точностью и скоростью работы: система создает 3D-модель тела за считанные секунды, учитывая все особенности фигуры. Особенно интересным оказался процесс калибровки системы под различные типы освещения и условия съемки. В ходе демонстрации мы обсудили технические аспекты интеграции с погодными API и возможности расширения функционала для учета сезонных изменений в гардеробе. Команда разработчиков Texel поделилась опытом работы с нейросетями и рассказала о планах по улучшению точности сканирования.</p>
+                    <div class="post-tags">
+                        <span class="tag">Технополис</span>
+                        <span class="tag">Прототип</span>
+                        <span class="tag">Разработка</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="journal-post">  
+                <div class="post-content">
+                    <div class="post-date">15 апреля 2025</div>
+                    <h2 class="post-title">Интеграция Texel Virtual Try-On и адаптация фоторамок для учёта погодных условий</h2>
+                    <p class="post-excerpt">Начался этап разработки интеграции технологии виртуальной примерки Texel с системой анализа погодных условий. Наша команда разработала алгоритм, который учитывает погодные условия. Это позволяет системе предлагать актуальные варианты одежды и планировать гардероб. В ходе тестирования технологий мы достигли хорошей точности рекомендаций. Следующим шагом станет интеграция с популярными погодными сервисами и оптимизация алгоритмов подбора одежды.</p>
+                    <div class="post-tags">
+                        <span class="tag">Интеграция</span>
+                        <span class="tag">Virtual Try-On</span>
+                        <span class="tag">Погода</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+</body>
+</html> 
